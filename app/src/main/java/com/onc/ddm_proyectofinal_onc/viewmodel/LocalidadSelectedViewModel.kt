@@ -20,6 +20,8 @@ class LocalidadSelectedViewModel(private val app : Application) : AndroidViewMod
     }
 
     fun setLocalidadSelected(localidad: Localidad){
+        if (localidad == null) { return }
+
         _localidadLiveData.postValue( localidad)
     }
 

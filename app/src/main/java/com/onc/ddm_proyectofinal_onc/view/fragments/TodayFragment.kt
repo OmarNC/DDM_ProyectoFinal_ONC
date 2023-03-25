@@ -108,6 +108,8 @@ class TodayFragment : Fragment() {
 
     private fun loadData()
     {
+        if (localidad == null) { return }
+
         CoroutineScope(Dispatchers.IO).launch {
 
             val call = Constants.getRetrofitWeater().create(IMyWeatherAPI::class.java)
@@ -204,6 +206,8 @@ class TodayFragment : Fragment() {
 
     private fun loadDataPollution()
     {
+        if (localidad == null) { return }
+
         CoroutineScope(Dispatchers.IO).launch {
 
             val call = Constants.getRetrofitPollution().create(IMyWeatherAPI::class.java)

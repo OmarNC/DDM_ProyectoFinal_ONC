@@ -23,6 +23,7 @@ class LocalidadesListViewModel (app : Application) : AndroidViewModel(app) {
     }
 
     fun updateItem(localidad: Localidad): Int {
+
         return localidadesRepository.updateLocalidad(localidad)
     }
 

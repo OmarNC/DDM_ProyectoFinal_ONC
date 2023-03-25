@@ -20,6 +20,7 @@ import com.onc.ddm_proyectofinal_onc.utils.Constants
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -36,6 +37,9 @@ class WeatherForecastViewModel(private val app : Application) : AndroidViewModel
 
 
     private fun loadData(localidad: Localidad) {
+
+        if (localidad == null) { return }
+
         CoroutineScope(Dispatchers.IO).launch {
 
             val call = Constants.getRetrofitWeater().create(IMyWeatherAPI::class.java)
@@ -67,12 +71,10 @@ class WeatherForecastViewModel(private val app : Application) : AndroidViewModel
                                 "ERROR: ${t.message}"
                     )
 
+
                     Toast.makeText(
                         this@WeatherForecastViewModel.getApplication(),
-                        "${
-                            Resources.getSystem()
-                                .getString(R.string.today_fragment_fail_conection)
-                        } ${Constants.BASE_URL}",
+                        "No se ha podido establecer conexión al sitio: ${Constants.BASE_URL}",
                         Toast.LENGTH_LONG
                     ).show()
 
@@ -83,6 +85,8 @@ class WeatherForecastViewModel(private val app : Application) : AndroidViewModel
 
 
     fun loadWeatherForecast(localidad: Localidad){
+        if (localidad == null) { return }
+
         this.localidad = localidad
         this._localidadLiveData.value = localidad
         loadData(localidad)
@@ -98,6 +102,8 @@ class WeatherForecastViewModel(private val app : Application) : AndroidViewModel
 
 
     fun setLocalidad(localidad: Localidad){
+        if (localidad == null) { return }
+
         this.localidad = localidad
         this._localidadLiveData.value = localidad
         loadData(localidad)

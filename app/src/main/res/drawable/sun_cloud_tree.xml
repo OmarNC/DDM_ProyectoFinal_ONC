@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/circulo_naranja"
+        android:width="48dp"
+        android:height="48dp"> </item>
+    <item android:drawable="@drawable/ic_cloud"
+        android:width="40dp" android:height="40dp"
+        android:top="5dp"
+        android:left="15dp"></item>
+
+    <item android:drawable="@drawable/forest_fill"
+        android:width="30dp" android:height="30dp"
+        android:top="25dp"
+        android:left="25dp">
+    </item>
+
+</layer-list>

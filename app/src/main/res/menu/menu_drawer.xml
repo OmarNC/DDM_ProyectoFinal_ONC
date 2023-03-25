@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/idListaCiudades"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/menu_ciudades" android:title="@string/menu_item_ciudad" />
+        <item android:id="@+id/menu_clima" android:title="@string/menu_item_clima" />
+        <item android:id="@+id/menu_sensores" android:title="@string/menu_item_sensores" />
+    </group>
+
+</menu>

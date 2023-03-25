@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">DDM_ProyectoFinal_ONC</string>
+
+    <string name="splash_title">Proyecto Final</string>
+    <string name="splash_module">Módulo Android.</string>
+    <string name="splash_version">Ver. 0.0.1</string>
+    <string name="splash_autor">Omar Nieto Crisóstomo</string>
+
+    <string name="backgroud_collampsing_tb_main_activity">Imagen de fondo de una playa con el cielo despejado y el mar llegando a la orillar de una playa, a lo lejos una embarcación</string>
+    <string name="main_activity_sclollview_description">Lista valores de temperatura, humedad entre otros</string>
+    <string name="main_activity_tablayout_description">Opciones de selección para lista de temperaturas diario o semanal</string>
+
+    <string name="main_toolbar_title">Clima</string>
+
+    <string name="main_tab_today">Tiempo</string>
+    <string name="main_tab_diary">Pronóstico</string>
+    <string name="main_tab_week">Semana</string>
+    <string name="menu_item_ciudad">Ciudad</string>
+    <string name="menu_item_clima">Clima</string>
+    <string name="menu_item_sensores">Sensores</string>
+    <!--   -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="diaryFragment_cardview_city">Ciudad</string>
+    <string name="diaryFragment_cardview_date">Fecha</string>
+    <string name="diaryFragment_cardview_detail_button">Detalle</string>
+    <string name="diaryFragment_cardview_description_button">Mostrar mas información</string>
+    <string name="Detalle">Detalle</string>
+    <string name="Detalle2">Ahora</string>
+    <string name="Temperatura">Temperatura</string>
+    <string name="Presion">Presión</string>
+    <string name="Humedad">Humedad</string>
+    <string name="WindSpeed">Vel. Viento</string>
+    <string name="main_tab_Localidades">Localidades</string>
+    <string name="fab_agregar">Agregar localidad</string>
+    <string name="diaryFragment_cardview_state">Estado</string>
+    <string name="add_location_name">Nombre</string>
+    <string name="add_localidad_agregar">Agregar</string>
+    <string name="add_location_description">Descripción</string>
+    <string name="add_localidad_agregar_text1">Agregar localidad</string>
+    <string name="add_location_Estado">Estado</string>
+    <string name="add_location_Lat">Latitud</string>
+    <string name="add_location_Lon">Longitud</string>
+
+    <string name="map_container_activity_aler_title">Permiso requerido</string>
+    <string name="map_container_activity_aler_message">Se necesita el permiso de localización para mostrar la ubicación del sitio</string>
+    <string name="map_container_activity_aler_positive_button">Concedido</string>
+    <string name="map_container_activity_alernegative_button">Denegado</string>
+    <string name="map_container_activity_toast_denegate_message">El permiso a la localización se ha negado permanentemente</string>
+    <string name="map_container_search_hint">Buscar...</string>
+    <string name="map_container_search_error">Hubo un problema al realizar la búsqueda de la localidad</string>
+    <string name="map_container_search_not_found">No se encontró la localidad</string>
+
+    <string name="activity_add_location_fav_desc">Burcar una localidad en el mapa</string>
+    <string name="activity_add_location_fav_text">Buscar</string>
+    <string name="add_location_pais">Pais</string>
+    <string name="diaryFragment_cardview_descripcion">Descripcción</string>
+    <string name="Id">Id</string>
+    <string name="nombre">Nombre</string>
+    <string name="estado">Estado</string>
+    <string name="pais">Pais</string>
+    <string name="Latitud">Latitud</string>
+    <string name="Longitud">Longitud</string>
+    <string name="today_fragment_fail_conection">No se ha podido establecer conexión al sitio:</string>
+    <string name="today_fragment_humedad">Humedad</string>
+    <string name="today_fragment_vel_viento">Vel. Viento</string>
+    <string name="salida_sol">Salida/Puesta</string>
+    <string name="WindGrad">Dir. Viento</string>
+    <string name="diaryFragment_cardview_CalidadAire">Calidad del aire</string>
+    <string name="today_fragment_Moderado">Moderado</string>
+    <string name="MonoxidoCarbono">Monóxido de Carbono (CO)</string>
+    <string name="MonoNitrogeno">Monóxido de nitrógeno (NO)</string>
+    <string name="DioxidoCarbono">Dióxido de carbono(CO2)</string>
+    <string name="Ozono">Ozono (O3)</string>
+    <string name="DioxidoAzufre">Dióxido de azufre (SO2)</string>
+    <string name="Amoniaco">Amoniaco (NH3)</string>
+    <string name="PM2_5">Partículas finas (PM2.5)</string>
+    <string name="PM10" >Partículas gruesas (PM10)</string>
+    <string name="DioxidoNitro">Dióxido de nitrógeno (NO2)</string>
+    <string name="addLocationActivity_not_correct_data">El nombre, latitud y longitud no deben estar en blaco</string>
+    <string name="guardar">Guardar</string>
+    <string name="ubicar">Ubicar</string>
+    <string name="delete">Borrar</string>
+    <string name="delete_dialog_title">Borrar localidad</string>
+    <string name="delete_dialog_message">"Se borrará la localidad: "</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="acceptar">Aceptar</string>
+    <string name="add_localidad_eliminar">Eliminar</string>
+    <string name="Pais">Pais</string>
+    <string name="Coord">Coordenadas GPS</string>
+    <string name="Presipitacion">Lluvia</string>
+    <string name="NavViewTitle">Localidad actual</string>
+    <string name="NavViewSubTitle">Seleccionar</string>
+
+
+</resources>

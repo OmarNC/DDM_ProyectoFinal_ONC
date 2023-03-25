@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/idCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/imageView_Localidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/teal_700"
+            android:src="@drawable/home_work_48px" />
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diaryFragment_cardview_city"
+            android:textColor="@color/blue_night2"
+            tools:text="@string/diaryFragment_cardview_city"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/imageView_Localidad"
+            />
+        <TextView
+            android:id="@+id/textView_Localidad_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diaryFragment_cardview_descripcion"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/imageView_Localidad"
+            android:layout_below="@id/textView_name"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

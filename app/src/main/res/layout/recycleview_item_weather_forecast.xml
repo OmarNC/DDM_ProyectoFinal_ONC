@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:strokeWidth="1dp"
+        app:cardElevation="8dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fecha_hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:30 a.m. 22/02/2023" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Row Weather -->
+                <LinearLayout
+                    android:id="@+id/id_layoutWeather"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/id_layout2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/iv_WeatherIcon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_02d"
+                        app:tint="@null" />
+
+
+                    <TextView
+                        android:id="@+id/textView_weatherMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="main"
+                        android:textColor="@color/orange" />
+
+                    <TextView
+                        android:id="@+id/textView_weatherDescrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="desc" />
+
+
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/id_layout2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:visibility="visible"
+                     android:orientation="vertical"
+                     app:layout_constraintTop_toTopOf="parent"
+                     app:layout_constraintStart_toEndOf="@id/id_layoutWeather"
+                     app:layout_constraintEnd_toStartOf="@+id/id_layout3"
+                     app:layout_constraintBottom_toBottomOf="parent">
+
+                     <!-- Row Temp -->
+                     <LinearLayout
+                         android:id="@+id/id_layoutTemp"
+                         android:layout_width="100dp"
+                         android:visibility="visible"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+                         >
+
+
+                         <ImageView
+                             android:id="@+id/iv_tempIcon"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/ic_thermostat_24"
+                             app:tint="@color/gris_400" />
+
+
+                         <TextView
+                             android:id="@+id/texView_temp"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center"
+                             android:text="temp"
+                             android:textColor="@color/orange"/>
+
+                         <TextView
+                             android:id="@+id/textView_tempMaxMin"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center"
+                             android:text="31° | 33°" />
+
+
+                     </LinearLayout>
+
+
+                     <!-- Row humedad-->
+                     <LinearLayout
+                         android:id="@+id/id_layoutHumedad"
+                         android:visibility="visible"
+                         android:layout_width="100dp"
+                         android:layout_marginTop="8dp"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+                         >
+
+
+                         <ImageView
+                             android:id="@+id/iv_HumedadIcon"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/ic_water_drop_24"
+                             app:tint="@color/gris_400" />
+
+
+                         <TextView
+                             android:id="@+id/texView_Humedad"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center"
+                             android:text="temp"
+                             android:textColor="@color/orange"/>
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:gravity="center"
+                             android:text="@string/Humedad" />
+                     </LinearLayout>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:id="@+id/id_layout3"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:visibility="visible"
+                         android:orientation="vertical"
+                         app:layout_constraintTop_toTopOf="parent"
+                         app:layout_constraintStart_toEndOf="@+id/id_layout2"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintBottom_toBottomOf="parent">
+
+                                 <!-- Row Rain -->
+                         <LinearLayout
+                                android:id="@+id/id_layoutPronostico"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                android:orientation="vertical"
+                                >
+
+
+                                <ImageView
+                                    android:id="@+id/iv_PresIcon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/umbrella"
+                                    app:tint="@color/gris_400" />
+
+
+                                <TextView
+                                    android:id="@+id/textView_PronosticoLluvia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="precip %"
+                                    android:textColor="@color/orange" />
+
+                                <TextView
+                                    android:id="@+id/textView_nubocidad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/Presipitacion" />
+
+
+                            </LinearLayout>
+
+                        <!-- Row PResion-->
+                        <LinearLayout
+                            android:id="@+id/id_layoutPresion"
+                            android:layout_width="100dp"
+                            android:visibility="visible"
+                            android:layout_marginTop="8dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+
+
+                            <ImageView
+                                android:id="@+id/iv_presionIcon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_speed_24"
+                                app:tint="@color/gris_400" />
+
+
+                            <TextView
+                                android:id="@+id/texView_presion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Presion"
+                                android:textColor="@color/orange"/>
+
+                            <TextView
+                                android:id="@+id/textView_presion2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/Presion" />
+
+
+            </LinearLayout>
+                     </LinearLayout>
+
+
+             </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
